@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: aqua; */
+    /* for random images go to source.unsplash.com */
+    /* background-image: url(); */
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    font-family: 'Merriweather', serif;
+    font-size: 120%;
+}
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+.card{
+    background-color:rgb(55, 37, 37);
+    color: white;
+    padding: 5%;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.2% ease-in-out;
+}
+button:hover {
+    background: #7c7c7c6b;
+}
+.searchbar{
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border-radius: 18px;
+    background-color: rgb(86, 85, 85);
+    color: aliceblue;
+    font-family: inherit;
+    font-size: 120%;
+    width: 100%;
+
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.whether.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+  
+.whether.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.notfound{
+    padding: 3em;
+    position: relative;
+    
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
